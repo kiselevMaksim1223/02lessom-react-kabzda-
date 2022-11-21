@@ -1,14 +1,22 @@
 import React from "react";
 
-function Star(props: any) {
+type StarPropsType = {
+    selected: boolean
+}
+
+function Star(props: StarPropsType) {
     console.log("star rendering")
-    if (props.selected === true) {
+    if (props.selected) {
 
         return <span><b>Star</b> </span>
     } else return <span>Star </span>
 }
 
-export function Rating(props: any) {
+type RatingPropsType = {
+    value: number
+}
+
+export function Rating(props: RatingPropsType) {
     console.log("rating rendering")
     if (props.value === 1) {
         return (
