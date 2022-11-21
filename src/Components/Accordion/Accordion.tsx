@@ -1,19 +1,19 @@
 import React from "react";
 
 
-function Accordion() {
+function Accordion(props:any) {
     console.log("AccordionTitle rendering")
     return (
         <div>
-            <AccordionTitle/>
+            <AccordionTitle h3title={props.title}/>
             <AccordionBody />
         </div>
     )
 }
 
-function AccordionTitle() {
+function AccordionTitle(props:any) {
     console.log("AccordionTitle rendering")
-    return <>This is Acc Title</>
+    return <h3>{props.h3title}</h3>
 }
 
 function AccordionBody() {
