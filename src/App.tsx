@@ -7,9 +7,9 @@ function App() {
     return (
         <div>
             <PageTitle title={"This is APP Component"}/>
-            <Accordion title={"List of Components"}/>
+            <Accordion title={"List of Components"} collapsed={false}/>
             <PageTitle title={"Users"}/>
-            <Accordion title={"List of Users"}/>
+            <Accordion title={"List of Users"} collapsed={true}/>
             Article 1
             <Rating value={3}/>
             Article 2
